@@ -1,0 +1,108 @@
+!Workspace
+!Version 650
+!Charset WindowsCyrillic
+Open Table "C:\Users\user\Downloads\Лен_03_карта\Лен_03_карта\Towns\Towns" As Towns Interactive
+Open Table "C:\Users\user\Downloads\Лен_03_карта\Лен_03_карта\Towns\TownText" As TownText Interactive
+Open Table "C:\Users\user\Downloads\Лен_03_карта\Лен_03_карта\Sea\Sea" As Sea Interactive
+Open Table "C:\Users\user\Downloads\Лен_03_карта\Лен_03_карта\Rivers\Rivers" As Rivers Interactive
+Open Table "C:\Users\user\Downloads\Лен_03_карта\Лен_03_карта\Lakes\Lakes" As Lakes Interactive
+Open Table "C:\Users\user\Downloads\Лен_03_карта\Лен_03_карта\Roads\Roads" As Roads Interactive
+Open Table "C:\Users\user\Downloads\12.K-914-66_194 (4).TAB" As _12_K_914_66_194__4_ Interactive
+Open Table "C:\Users\user\Documents\Untitled" As Untitled Interactive
+Open Table "C:\Users\user\Documents\цк" As цк Interactive
+Open Table "pole" As pole Interactive
+Open Table "ozero" As ozero Interactive
+Open Table "ozera" As ozera Interactive
+Open Table "reki" As reki Interactive
+Open Table "karta" As karta Interactive
+Open Table "kordoni" As kordoni Interactive
+Map From kordoni,ozera,karta,Roads,Rivers,Sea,
+  TownText,Towns,Lakes,_12_K_914_66_194__4_ 
+  Position (0.0520833,0.0520833) Units "in"
+  Width 11.4167 Units "in" Height 6.33333 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On
+Set Map
+  CoordSys Earth Projection 1, 1001
+  Center (30.80859312,59.47325389)
+  Zoom 8.512162015 Units "km"
+  Preserve Zoom Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "degree"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Label Line Arrow Position Right Font ("Arial Cyr",0,9,0) Pen (1,2,0) 
+      With кордоны
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Label Line Arrow Position Right Font ("Arial Cyr",0,9,0) Pen (1,2,0) 
+      With озера
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 3
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Label Line Arrow Position Right Font ("Arial Cyr",0,9,0) Pen (1,2,0) 
+      With karta
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 4
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Label Line Arrow Position Above Font ("Arial Cyr",0,9,0) Pen (1,2,0) 
+      With ID
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 5
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Label Line Arrow Position Above Font ("Arial Cyr",0,9,0) Pen (1,2,0) 
+      With ID
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 6
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Label Line None Position Center Font ("Arial Cyr",0,9,0) Pen (1,2,0) 
+      With name_west
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 7
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Label Line Arrow Position Right Font ("Arial Cyr",0,9,0) Pen (1,2,0) 
+      With ID
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 8
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Label Line None Position Center Font ("Arial Cyr",0,9,0) Pen (1,2,0) 
+      With ID
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 9
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Label Line None Position Center Font ("Arial Cyr",0,9,0) Pen (1,2,0) 
+      With ID
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 10
+    Display Global
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Selectable Off
+    Zoom (0.017, 6.7) Units "km" 
+  contrast 50 
+  brightness 50 
+  alpha 255 
+    transparency off 
+  color 0 
+    grayscale off 
+Set Map Layer 1 Editable
+Set Window FrontWindow() Printer
+ Name "EPSON L350 Series" Orientation Portrait Copies 1
+ Papersize 9
